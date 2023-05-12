@@ -13,6 +13,7 @@
 
 body {
 	height: 100vh;
+	font-family: 'Roboto', sans-serif;
 }
 
 .main-view {
@@ -140,4 +141,48 @@ ul {
 	border-color: var(--text-base);
 }
 
-/*-> Utils*/
+/*Header*/
+.main-view__application .application__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: var(--bg-base);
+}
+
+.header__arrows > .btn {
+	color: var(--text-base);
+	background-color: #060606;
+	border: none;
+	border-radius: 50%;
+}
+
+.header__access {
+	display: inline-flex;
+	align-items: center;
+	font-weight: 500;
+	gap: 30px;
+}
+
+.access__logup {
+	transition: color 0.2s ease-in-out;
+}
+
+.access__logup:hover {
+	color: var(--text-base);
+}
+
+.access__login {
+	padding: 8px 16px;
+	width: fit-content;
+	border-radius: 40px;
+	color: var(--bg-black);
+	background-color: var(--text-base);
+	transition: transform 0.2s ease-in-out;
+}
+
+.access__login:hover {
+	transform: scale(1.1);
+}
+
+/*Right section*/
