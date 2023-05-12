@@ -84,7 +84,7 @@
 
 		<!-- Right section -->
 		<section class="main-view__application">
-			<header class="application__header">
+			<header class="application__header sticky-top">
 				<div class="header__arrows">
 					<button class="btn disabled">
 						<i class="bi bi-chevron-left"></i>
@@ -100,35 +100,218 @@
 				</div>
 			</header>
 
-			<!-- Playlist showcase -->
-			<section>
+			<!-- Playlist showcase 1 -->
+			<section class="application__showcase">
 				<!-- Links above playlists -->
-				<div>
+				<div class="showcase__title">
 					<a href="#">
 						<h2>Enfoque</h2>
 					</a>
 					<a href="#">Mostrar todo</a>
 				</div>
 
-				<!-- Playlist cards -->
-				<div>
-					<div>
-						<div>
-							<img src="#" alt="pl_1">
-							<button>Play</button>
+				<!-- Cards -->
+				<div class="showcase__grid">
+					<div class="grid__card card">
+						<div class="card-body">
+							<img src="./img/phrog.jpg" alt="pl_1" class="card-img shadow">
+							<div class="card__play-btn">
+								<button class="btn">
+									<i class="bi bi-play-circle-fill"></i>
+								</button>
+							</div>
 						</div>
-						<div>
-							<h5>Peaceful Piano</h5>
-							<p>Peaceful piano to help you slow down, breathe, and relax.</p>
+
+						<div class="card-header">
+							<div>
+								<h5 class="card-title">Peaceful Piano</h5>
+								<p class="card-text">Peaceful piano to help you slow down, breathe, and relax.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="grid__card card">
+						<div class="card-body">
+							<img src="./img/phrog.jpg" alt="pl_2" class="card-img shadow">
+							<div class="card__play-btn">
+								<button class="btn">
+									<i class="bi bi-play-circle-fill"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="card-header">
+							<div>
+								<h5 class="card-title">Deep Focus</h5>
+								<p class="card-text">Keep calm and focus with ambien and post-rock music.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="grid__card card">
+						<div class="card-body">
+							<img src="./img/phrog.jpg" alt="pl_3" class="card-img shadow">
+							<div class="card__play-btn">
+								<button class="btn">
+									<i class="bi bi-play-circle-fill"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="card-header">
+							<div>
+								<h5 class="card-title">Instrumental Study</h5>
+								<p class="card-text">Focus with soft study music in the background.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="grid__card card">
+						<div class="card-body">
+							<img src="./img/phrog.jpg" alt="pl_4" class="card-img shadow">
+							<div class="card__play-btn">
+								<button class="btn">
+									<i class="bi bi-play-circle-fill"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="card-header">
+							<div>
+								<h5 class="card-title">Focus Flow</h5>
+								<p class="card-text">Uptempo instrumental hip hip beats.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card card">
+						<div class="card-body">
+							<img src="./img/phrog.jpg" alt="pl_5" class="card-img shadow">
+							<div class="card__play-btn">
+								<button class="btn">
+									<i class="bi bi-play-circle-fill"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="card-header">
+							<div>
+								<h5 class="card-title">Beats to think to</h5>
+								<p class="card-text">Focus with deep techno and tech house.</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<!-- Playlist cards -->
+				<!-- Cards -->
 
-				<!-- Todo Add other playlist cards -->
 			</section>
+			<!-- Playlist showcase 1 -->
 
-			<!-- Todo Add other showcase -->
+			<!-- Playlist showcase 2 -->
+			<section class="application__showcase">
+				<!-- Links above playlists -->
+				<div class="showcase__title">
+					<a href="#">
+						<h2>Playlists de Spotify</h2>
+					</a>
+					<a href="#">Mostrar todo</a>
+				</div>
+
+				<!-- Cards -->
+				<div class="showcase__grid">
+					<div class="grid__card card">
+						<div class="card-body">
+							<img src="./img/phrog.jpg" alt="pl_1" class="card-img shadow">
+							<div class="card__play-btn">
+								<button class="btn">
+									<i class="bi bi-play-circle-fill"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="card-header">
+							<div>
+								<h5 class="card-title">Today's Top Hits</h5>
+								<p class="card-text">Eslabon Armado & Peso Pluma are on top of the Hottest 50!</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="grid__card card">
+						<div class="card-body">
+							<img src="./img/phrog.jpg" alt="pl_2" class="card-img shadow">
+							<div class="card__play-btn">
+								<button class="btn">
+									<i class="bi bi-play-circle-fill"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="card-header">
+							<div>
+								<h5 class="card-title">All Out 2010s</h5>
+								<p class="card-text">The biggest songs of the 2010s.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="grid__card card">
+						<div class="card-body">
+							<img src="./img/phrog.jpg" alt="pl_3" class="card-img shadow">
+							<div class="card__play-btn">
+								<button class="btn">
+									<i class="bi bi-play-circle-fill"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="card-header">
+							<div>
+								<h5 class="card-title">Rock Classics</h5>
+								<p class="card-text">Rock legends & epic songs that continue to inspire generations.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="grid__card card">
+						<div class="card-body">
+							<img src="./img/phrog.jpg" alt="pl_4" class="card-img shadow">
+							<div class="card__play-btn">
+								<button class="btn">
+									<i class="bi bi-play-circle-fill"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="card-header">
+							<div>
+								<h5 class="card-title">Chill Hits</h5>
+								<p class="card-text">Kick back to the best new and recent chill hits.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card card">
+						<div class="card-body">
+							<img src="./img/phrog.jpg" alt="pl_5" class="card-img shadow">
+							<div class="card__play-btn">
+								<button class="btn">
+									<i class="bi bi-play-circle-fill"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="card-header">
+							<div>
+								<h5 class="card-title">All Out 80s</h5>
+								<p class="card-text">The biggest songs of the 1980s.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Cards -->
+
+			</section>
+			<!-- Playlist showcase 2 -->
+
 
 			<!-- Bottom aside links -->
 			<aside>
@@ -166,7 +349,7 @@
 
 	</main>
 
-	<footer class="">
+	<footer class="fixed-bottom">
 		<div>
 			<h4>Muestra de Spotify</h4>
 			<p>Regístrate para acceder a canciones y podcasts ilimitados con algunos anuncios. No necesitas tarjeta
