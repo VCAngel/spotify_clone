@@ -18,29 +18,30 @@
 <body>
 	<main class="main-view">
 		<!-- Left navigation bar -->
-		<section class="main-view__navigation">
-			<nav class="navigation__nav">
-				<div class="nav__banner">
+		<section class="main-view__navigation m-4">
+			<nav class="navigation__nav d-flex flex-column gap-5 h-100">
+				<div class="nav__banner d-flex justify-content-start align-items-center">
 					<a href="#">
 						<img src="./img/spotify_logo.png" alt="spotify_logo">
 					</a>
 				</div>
 
 				<ul class="nav__links" id="links">
-					<li class="links--item">
-						<a href="#">
-							<i class="bi bi-house-door-fill --link-highlight"></i>
+					<li class="links--item my-1 mx-0">
+						<a href="#"
+							class="text-white d-flex justify-content-start align-items-center gap-3 overflow-hidden">
+							<i class="bi bi-house-door-fill"></i>
 							<span class="--link-highlight">Inicio</span>
 						</a>
 					</li>
-					<li class="links--item">
-						<a href="#">
+					<li class="links--item my-1 mx-0">
+						<a href="#" class="d-flex justify-content-start align-items-center gap-3 overflow-hidden">
 							<i class="bi bi-search"></i>
 							<span>Buscar</span>
 						</a>
 					</li>
-					<li class="links--item">
-						<a href="#">
+					<li class="links--item my-1 mx-0">
+						<a href="#" class="d-flex justify-content-start align-items-center gap-3 overflow-hidden">
 							<i class="bi bi-music-note-list"></i>
 							<span>Tu Biblioteca</span>
 						</a>
@@ -48,15 +49,15 @@
 				</ul>
 
 				<ul class="nav__links" id="playlists">
-					<li class="links--item">
-						<a href="#">
+					<li class="links--item my-1 mx-0">
+						<a href="#" class="d-flex justify-content-start align-items-center gap-3 overflow-hidden">
 							<i class="bi bi-plus-square-fill"></i>
 							<span>Crear Playlist</span>
 						</a>
 					</li>
-					<li class="links--item" id="liked-songs">
-						<a href="#">
-							<div>
+					<li class="links--item my-1 mx-0" id="liked-songs">
+						<a href="#" class="d-flex justify-content-start align-items-center gap-3 overflow-hidden">
+							<div class="d-flex justify-content-center align-items-center">
 								<i class="bi bi-heart-fill"></i>
 							</div>
 							<span>Tus me gusta</span>
@@ -66,7 +67,7 @@
 
 				<!-- Left Aside links -->
 				<aside class="nav__aside">
-					<nav class="aside__links">
+					<nav class="aside__links d-flex flex-wrap">
 						<a href="#">Legal</a>
 						<a href="#">Centro de Privacidad</a>
 						<a href="#">Política de Privacidad</a>
@@ -74,7 +75,8 @@
 						<a href="#">Sobre los anuncios</a>
 					</nav>
 
-					<button class="aside__lang-btn">
+					<button
+						class="aside__lang-btn d-inline-flex align-items-center gap-3 py-2 px-3 my-3 w-100 bg-transparent overflow-hidden">
 						<i class="bi bi-globe"></i>
 						Español de Latinoamérica
 					</button>
@@ -83,8 +85,8 @@
 		</section>
 
 		<!-- Right section -->
-		<section class="main-view__application">
-			<header class="application__header sticky-top">
+		<section class="main-view__application position-relative overflow-y-scroll">
+			<header class="application__header sticky-top d-flex justify-content-between align-items-center py-2 px-3">
 				<div class="header__arrows">
 					<button class="btn disabled">
 						<i class="bi bi-chevron-left"></i>
@@ -94,16 +96,16 @@
 					</button>
 				</div>
 
-				<div class="header__access">
+				<div class="header__access d-inline-flex align-items-center gap-4">
 					<a href="#" class="access__logup">Regístrate</a>
-					<a href="#" class="access__login">Iniciar Sesión</a>
+					<a href="#" class="access__login py-2 px-3">Iniciar Sesión</a>
 				</div>
 			</header>
 
-			<!-- Playlist showcase 1 -->
-			<section class="application__showcase">
+			<!-- -> Playlist showcase 1 -->
+			<section class="application__showcase m-5">
 				<!-- Links above playlists -->
-				<div class="showcase__title">
+				<div class="showcase__title d-inline-flex align-items-baseline justify-content-between w-100 mb-3">
 					<a href="#">
 						<h2>Enfoque</h2>
 					</a>
@@ -111,18 +113,18 @@
 				</div>
 
 				<!-- Cards -->
-				<div class="showcase__grid">
-					<div class="grid__card card">
-						<div class="card-body">
-							<img src="./img/phrog.jpg" alt="pl_1" class="card-img shadow">
-							<div class="card__play-btn">
+				<div class="showcase__grid gap-3">
+					<div class="grid__card card flex-row flex-md-column align-items-center align-items-md-start overflow-hidden">
+						<div class="card-body position-relative">
+							<img src="./img/phrog.jpg" alt="pl_1" class="card-img shadow object-fit-cover">
+							<div class="card__play-btn position-absolute w-100 h-100 top-0 start-0 bottom-0 end-0 p-md-4">
 								<button class="btn">
 									<i class="bi bi-play-circle-fill"></i>
 								</button>
 							</div>
 						</div>
 
-						<div class="card-header">
+						<div class="card-header overflow-hidden">
 							<div>
 								<h5 class="card-title">Peaceful Piano</h5>
 								<p class="card-text">Peaceful piano to help you slow down, breathe, and relax.</p>
@@ -130,17 +132,17 @@
 						</div>
 					</div>
 
-					<div class="grid__card card">
-						<div class="card-body">
-							<img src="./img/phrog.jpg" alt="pl_2" class="card-img shadow">
-							<div class="card__play-btn">
+					<div class="grid__card card flex-row flex-md-column align-items-center align-items-md-start overflow-hidden">
+						<div class="card-body position-relative">
+							<img src="./img/phrog.jpg" alt="pl_2" class="card-img shadow object-fit-cover">
+							<div class="card__play-btn position-absolute w-100 h-100 top-0 start-0 bottom-0 end-0 p-md-4">
 								<button class="btn">
 									<i class="bi bi-play-circle-fill"></i>
 								</button>
 							</div>
 						</div>
 
-						<div class="card-header">
+						<div class="card-header overflow-hidden">
 							<div>
 								<h5 class="card-title">Deep Focus</h5>
 								<p class="card-text">Keep calm and focus with ambien and post-rock music.</p>
@@ -148,17 +150,17 @@
 						</div>
 					</div>
 
-					<div class="grid__card card">
-						<div class="card-body">
-							<img src="./img/phrog.jpg" alt="pl_3" class="card-img shadow">
-							<div class="card__play-btn">
+					<div class="grid__card card flex-row flex-md-column align-items-center align-items-md-start overflow-hidden">
+						<div class="card-body position-relative">
+							<img src="./img/phrog.jpg" alt="pl_3" class="card-img shadow object-fit-cover">
+							<div class="card__play-btn position-absolute w-100 h-100 top-0 start-0 bottom-0 end-0 p-md-4">
 								<button class="btn">
 									<i class="bi bi-play-circle-fill"></i>
 								</button>
 							</div>
 						</div>
 
-						<div class="card-header">
+						<div class="card-header overflow-hidden">
 							<div>
 								<h5 class="card-title">Instrumental Study</h5>
 								<p class="card-text">Focus with soft study music in the background.</p>
@@ -166,34 +168,34 @@
 						</div>
 					</div>
 
-					<div class="grid__card card">
-						<div class="card-body">
-							<img src="./img/phrog.jpg" alt="pl_4" class="card-img shadow">
-							<div class="card__play-btn">
+					<div class="grid__card card flex-row flex-md-column align-items-center align-items-md-start overflow-hidden">
+						<div class="card-body position-relative">
+							<img src="./img/phrog.jpg" alt="pl_4" class="card-img shadow object-fit-cover">
+							<div class="card__play-btn position-absolute w-100 h-100 top-0 start-0 bottom-0 end-0 p-md-4">
 								<button class="btn">
 									<i class="bi bi-play-circle-fill"></i>
 								</button>
 							</div>
 						</div>
 
-						<div class="card-header">
+						<div class="card-header overflow-hidden">
 							<div>
 								<h5 class="card-title">Focus Flow</h5>
 								<p class="card-text">Uptempo instrumental hip hip beats.</p>
 							</div>
 						</div>
 					</div>
-					<div class="grid__card card">
-						<div class="card-body">
-							<img src="./img/phrog.jpg" alt="pl_5" class="card-img shadow">
-							<div class="card__play-btn">
+					<div class="grid__card card flex-row flex-md-column align-items-center align-items-md-start overflow-hidden">
+						<div class="card-body position-relative">
+							<img src="./img/phrog.jpg" alt="pl_5" class="card-img shadow object-fit-cover">
+							<div class="card__play-btn position-absolute w-100 h-100 top-0 start-0 bottom-0 end-0 p-md-4">
 								<button class="btn">
 									<i class="bi bi-play-circle-fill"></i>
 								</button>
 							</div>
 						</div>
 
-						<div class="card-header">
+						<div class="card-header overflow-hidden">
 							<div>
 								<h5 class="card-title">Beats to think to</h5>
 								<p class="card-text">Focus with deep techno and tech house.</p>
@@ -207,9 +209,9 @@
 			<!-- Playlist showcase 1 -->
 
 			<!-- Playlist showcase 2 -->
-			<section class="application__showcase">
+			<section class="application__showcase m-5">
 				<!-- Links above playlists -->
-				<div class="showcase__title">
+				<div class="showcase__title d-inline-flex align-items-baseline justify-content-between w-100 mb-3">
 					<a href="#">
 						<h2>Playlists de Spotify</h2>
 					</a>
@@ -217,18 +219,18 @@
 				</div>
 
 				<!-- Cards -->
-				<div class="showcase__grid">
-					<div class="grid__card card">
-						<div class="card-body">
-							<img src="./img/phrog.jpg" alt="pl_1" class="card-img shadow">
-							<div class="card__play-btn">
+				<div class="showcase__grid gap-3">
+					<div class="grid__card card flex-row flex-md-column align-items-center align-items-md-start overflow-hidden">
+						<div class="card-body position-relative">
+							<img src="./img/phrog.jpg" alt="pl_1" class="card-img shadow object-fit-cover">
+							<div class="card__play-btn position-absolute w-100 h-100 top-0 start-0 bottom-0 end-0 p-md-4">
 								<button class="btn">
 									<i class="bi bi-play-circle-fill"></i>
 								</button>
 							</div>
 						</div>
 
-						<div class="card-header">
+						<div class="card-header overflow-hidden">
 							<div>
 								<h5 class="card-title">Today's Top Hits</h5>
 								<p class="card-text">Eslabon Armado & Peso Pluma are on top of the Hottest 50!</p>
@@ -236,17 +238,17 @@
 						</div>
 					</div>
 
-					<div class="grid__card card">
-						<div class="card-body">
-							<img src="./img/phrog.jpg" alt="pl_2" class="card-img shadow">
-							<div class="card__play-btn">
+					<div class="grid__card card flex-row flex-md-column align-items-center align-items-md-start overflow-hidden">
+						<div class="card-body position-relative">
+							<img src="./img/phrog.jpg" alt="pl_2" class="card-img shadow object-fit-cover">
+							<div class="card__play-btn position-absolute w-100 h-100 top-0 start-0 bottom-0 end-0 p-md-4">
 								<button class="btn">
 									<i class="bi bi-play-circle-fill"></i>
 								</button>
 							</div>
 						</div>
 
-						<div class="card-header">
+						<div class="card-header overflow-hidden">
 							<div>
 								<h5 class="card-title">All Out 2010s</h5>
 								<p class="card-text">The biggest songs of the 2010s.</p>
@@ -254,17 +256,17 @@
 						</div>
 					</div>
 
-					<div class="grid__card card">
-						<div class="card-body">
-							<img src="./img/phrog.jpg" alt="pl_3" class="card-img shadow">
-							<div class="card__play-btn">
+					<div class="grid__card card flex-row flex-md-column align-items-center align-items-md-start overflow-hidden">
+						<div class="card-body position-relative">
+							<img src="./img/phrog.jpg" alt="pl_3" class="card-img shadow object-fit-cover">
+							<div class="card__play-btn position-absolute w-100 h-100 top-0 start-0 bottom-0 end-0 p-md-4">
 								<button class="btn">
 									<i class="bi bi-play-circle-fill"></i>
 								</button>
 							</div>
 						</div>
 
-						<div class="card-header">
+						<div class="card-header overflow-hidden">
 							<div>
 								<h5 class="card-title">Rock Classics</h5>
 								<p class="card-text">Rock legends & epic songs that continue to inspire generations.</p>
@@ -272,34 +274,34 @@
 						</div>
 					</div>
 
-					<div class="grid__card card">
-						<div class="card-body">
-							<img src="./img/phrog.jpg" alt="pl_4" class="card-img shadow">
-							<div class="card__play-btn">
+					<div class="grid__card card flex-row flex-md-column align-items-center align-items-md-start overflow-hidden">
+						<div class="card-body position-relative">
+							<img src="./img/phrog.jpg" alt="pl_4" class="card-img shadow object-fit-cover">
+							<div class="card__play-btn position-absolute w-100 h-100 top-0 start-0 bottom-0 end-0 p-md-4">
 								<button class="btn">
 									<i class="bi bi-play-circle-fill"></i>
 								</button>
 							</div>
 						</div>
 
-						<div class="card-header">
+						<div class="card-header overflow-hidden">
 							<div>
 								<h5 class="card-title">Chill Hits</h5>
 								<p class="card-text">Kick back to the best new and recent chill hits.</p>
 							</div>
 						</div>
 					</div>
-					<div class="grid__card card">
-						<div class="card-body">
-							<img src="./img/phrog.jpg" alt="pl_5" class="card-img shadow">
-							<div class="card__play-btn">
+					<div class="grid__card card flex-row flex-md-column align-items-center align-items-md-start overflow-hidden">
+						<div class="card-body position-relative">
+							<img src="./img/phrog.jpg" alt="pl_5" class="card-img shadow object-fit-cover">
+							<div class="card__play-btn position-absolute w-100 h-100 top-0 start-0 bottom-0 end-0 p-md-4">
 								<button class="btn">
 									<i class="bi bi-play-circle-fill"></i>
 								</button>
 							</div>
 						</div>
 
-						<div class="card-header">
+						<div class="card-header overflow-hidden">
 							<div>
 								<h5 class="card-title">All Out 80s</h5>
 								<p class="card-text">The biggest songs of the 1980s.</p>
@@ -313,17 +315,17 @@
 			<!-- Playlist showcase 2 -->
 
 
-			<!-- Footer links -->
-			<footer class="application__footer">
-				<section class="footer__links">
-					<nav class="links__info">
-						<div class="info__group">
+			<!--* Footer links -->
+			<footer class="application__footer p-5">
+				<section class="footer__links d-flex flex-column flex-md-row justify-content-between gap-4">
+					<nav class="links__info d-flex flex-column flex-lg-row flex-wrap gap-4 justify-content-lg-evenly gap-xl-5">
+						<div class="info__group d-flex flex-column gap-2">
 							<h5>Compañía</h5>
 							<a href="#">Acerca de</a>
 							<a href="#">Empleo</a>
 							<a href="#">For the Record</a>
 						</div>
-						<div class="info__group">
+						<div class="info__group d-flex flex-column gap-2">
 							<h5>Comunidades</h5>
 							<a href="#">Para artistas</a>
 							<a href="#">Desarrolladores</a>
@@ -332,13 +334,13 @@
 							<a href="#">Proveedores</a>
 							<a href="#">Spotify for Work</a>
 						</div>
-						<div class="info__group">
+						<div class="info__group d-flex flex-column gap-2">
 							<h5>Enlaces útiles</h5>
 							<a href="#">Ayuda</a>
 							<a href="#">App móvil gratis</a>
 						</div>
 					</nav>
-					<div class="links__socials">
+					<div class="links__socials d-flex gap-3">
 						<button class="btn">
 							<i class="bi bi-instagram"></i>
 						</button>
@@ -359,14 +361,14 @@
 		</section>
 
 
-		<section class="main-view__bottom-banner">
+		<section class="main-view__bottom-banner py-3 px-4 d-flex flex-column flex-md-row justify-content-around justify-content-md-between align-items-start align-items-md-center gap-3">
 			<div class="bottom-banner__text">
 				<h6>Muestra de Spotify</h6>
 				<p>Regístrate para acceder a canciones y podcasts ilimitados con algunos anuncios. No necesitas tarjeta
 					de crédito.</p>
 			</div>
 
-			<a href="#" class="bottom-banner__button">
+			<a href="#" class="bottom-banner__button py-2 px-3">
 				Regístrate gratis
 			</a>
 

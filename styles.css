@@ -55,24 +55,6 @@ button {
 }
 
 /*Left section*/
-
-.main-view__navigation {
-	padding: 30px;
-}
-
-.navigation__nav {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
-	height: 100%;
-}
-
-.nav__banner {
-	display: flex;
-	justify-content: left;
-	align-items: center;
-}
-
 .nav__banner a img {
 	max-width: 180px;
 }
@@ -83,16 +65,10 @@ button {
 
 .links--item {
 	list-style: none;
-	margin: 5px 0;
 }
 
 .links--item > a {
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	gap: 16px;
 	white-space: nowrap;
-	overflow: hidden;
 	transition: color 0.2s ease-in-out;
 }
 
@@ -108,9 +84,6 @@ button {
 
 .links--item#liked-songs > a > div {
 	font-size: small;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	min-width: 1.9em;
 	min-height: 1.9em;
 	border-radius: 4px;
@@ -118,8 +91,6 @@ button {
 }
 
 .navigation__nav .nav__aside .aside__links {
-	display: flex;
-	flex-wrap: wrap;
 	font-size: small;
 }
 
@@ -129,18 +100,10 @@ button {
 }
 
 .aside__lang-btn {
-	display: inline-flex;
-	align-items: center;
-	gap: 10px;
-	padding: 10px;
-	margin: 24px 0;
 	border: 1px solid var(--text-secondary);
-	width: 100%;
 	max-width: fit-content;
 	border-radius: 40px;
-	background-color: transparent;
 	color: var(--text-base);
-	overflow: hidden;
 	transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
@@ -152,16 +115,10 @@ button {
 
 /*Header*/
 .main-view__application {
-	position: relative;
-	overflow-y: scroll;
 	background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-base));
 }
 
 .main-view__application .application__header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px 20px;
 	background-color: var(--bg-base);
 }
 
@@ -173,10 +130,7 @@ button {
 }
 
 .header__access {
-	display: inline-flex;
-	align-items: center;
 	font-weight: 500;
-	gap: 30px;
 }
 
 .access__logup {
@@ -190,7 +144,6 @@ button {
 }
 
 .access__login {
-	padding: 8px 16px;
 	width: fit-content;
 	border-radius: 40px;
 	color: var(--bg-black);
@@ -205,51 +158,27 @@ button {
 }
 
 /*Right section*/
-.main-view__application .application__showcase {
-	padding: 30px;
-}
-
-.showcase__title {
-	display: inline-flex;
-	align-items: baseline;
-	justify-content: space-between;
-	width: 100%;
-	margin-bottom: 16px;
-}
 
 .showcase__grid {
 	display: grid;
 	grid-auto-rows: auto;
-	gap: 12px;
 }
 
 .grid__card {
 	background: linear-gradient(to bottom, var(--bg-card-base), var(--bg-card-secondary));
-	flex-direction: row;
-	align-items: center;
 	max-height: 128px;
-	overflow: hidden;
 }
 
 .grid__card > .card-body {
-	position: relative;
 	min-width: 128px;
 	max-width: 128px;
 }
 
 .grid__card > .card-body > .card-img {
-	object-fit: cover;
 	max-height: 100px;
 }
 
 .card__play-btn {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
 	filter: opacity(0);
 	background: linear-gradient(to top, rgba(42, 42, 42, 0.4), rgba(26, 26, 26, 0.4));
 	transition: filter 0.1s ease-in-out;
@@ -279,7 +208,6 @@ button {
 }
 
 .card-header {
-	overflow: hidden;
 	text-overflow: ellipsis;
 }
 
@@ -293,39 +221,10 @@ button {
 
 /*Right section footer*/
 
-.main-view__application > .application__footer {
-	padding: 30px;
-}
-
-.footer__links {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 20px;
-}
-
-.footer__links > .links__info {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	gap: 30px;
-}
-
-.links__info > .info__group {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-
 .links__info > .info__group > h5,
 .links__info > .info__group > a {
 	font-size: medium;
 	font-weight: 300;
-}
-
-.links__socials {
-	display: flex;
-	gap: 10px;
 }
 
 .links__socials > button {
@@ -350,13 +249,7 @@ button {
 /* Bottom banner*/
 .main-view__bottom-banner {
 	grid-column: 1/3;
-	padding: 10px 20px;
-	background: linear-gradient(to right, purple, teal);
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: flex-start;
-	gap: 10px;
+	background: linear-gradient(to right, purple, teal);	
 }
 
 .bottom-banner__text {
@@ -372,7 +265,6 @@ button {
 }
 
 .bottom-banner__button {
-	padding: 8px 16px;
 	width: fit-content;
 	border-radius: 40px;
 	color: var(--bg-black);
@@ -396,8 +288,6 @@ button {
 	}
 
 	.grid__card {
-		flex-direction: column;
-		align-items: start;
 		max-width: 300px;
 		height: 256px;
 		max-height: 256px;
@@ -412,10 +302,6 @@ button {
 		max-height: initial;
 	}
 
-	.card__play-btn {
-		padding: 16px;
-	}
-
 	.card__play-btn > button {
 		position: absolute;
 		right: 0;
@@ -428,49 +314,27 @@ button {
 	.card__play-btn i {
 		font-size: 5ch;
 	}
-
 	.card-header {
 		height: 100%;
 	}
 
-	.main-view__bottom-banner {
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-		gap: 10px;
-	}
 }
 
 @media (min-width: 992px) {
 	.showcase__grid {
-		grid-template-columns: repeat(4, minmax(0, 1fr));
+		grid-template-columns: repeat(4, minmax(0, max-content));
 	}
 
 	.grid__card {
 		height: 100%;
 		max-height: initial;
-	}
-
-	.footer__links {
-		flex-direction: row;
-	}
-
-	.footer__links > .links__info {
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
+		max-width: 248px;
 	}
 }
 
 @media (min-width: 1200px) {
 	.showcase__grid {
-		grid-template-columns: repeat(5, minmax(0, 1fr));
-	}
-
-	.footer__links > .links__info {
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		gap: 60px;
+		grid-template-columns: repeat(5, minmax(0, max-content));
+		gap: 20px;
 	}
 }
