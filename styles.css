@@ -1,0 +1,143 @@
+/*Base styles*/
+
+:root {
+	--bg-black: #000;
+	--bg-base: #121212;
+	--bg-secondary: #1a1a1a;
+	--bg-card-base: #242424;
+	--bg-card-secondary: #2a2a2a;
+	--text-base: #fff;
+	--text-secondary: #a7a7a7;
+	--green-accent: #1ed760;
+}
+
+body {
+	height: 100vh;
+}
+
+.main-view {
+	background-color: var(--bg-black);
+	display: grid;
+	grid-template-columns: minmax(100px, 380px) minmax(500px, 1fr);
+	height: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	color: var(--text-base);
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-secondary);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/*Left section*/
+
+.main-view__navigation {
+	padding: 20px;
+}
+
+.navigation__nav {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	height: 100%;
+}
+
+.nav__banner {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.nav__banner a img {
+	max-width: 160px;
+}
+
+.nav__links#playlists {
+	flex: 1 0 auto;
+}
+
+.links--item {
+	list-style: none;
+	margin: 5px 0;
+}
+
+.links--item > a {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	gap: 16px;
+	font-weight: 500;
+	white-space: nowrap;
+	overflow: hidden;
+	transition: color 0.2s ease-in-out;
+}
+
+.links--item > a:hover {
+	color: var(--text-base);
+}
+
+.links--item > a > i {
+	font-size: x-large;
+}
+
+.links--item#liked-songs > a > div {
+	font-size: small;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 1.9em;
+	min-height: 1.9em;
+	border-radius: 4px;
+	background: linear-gradient(to bottom right, purple, teal);
+}
+
+.navigation__nav .nav__aside .aside__links {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: small;
+	font-weight: 300;
+}
+
+.navigation__nav .nav__aside .aside__links a {
+	padding: 0 2ch 1ch 0;
+}
+
+.aside__lang-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	margin: 24px 0;
+	border: 1px solid var(--text-secondary);
+	width: 100%;
+	max-width: fit-content;
+	border-radius: 40px;
+	background-color: transparent;
+	color: var(--text-base);
+	overflow: hidden;
+	transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.aside__lang-btn:hover {
+	transform: scale(1.1);
+	border-color: var(--text-base);
+}
+
+/*-> Utils*/
